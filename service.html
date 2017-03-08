@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 设置苹果工具栏颜色 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <title>宠物服务首页</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/service.css" />
+    <script src="js/base.js" type="text/javascript"></script>
+    <script src="js/TouchSlide.1.1.js" type="text/javascript"></script>
+</head> 
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="city">
+                <a href="#">广州</a>
+            </div>
+            <div class="search">
+                <a href="#">请输入搜索关键词</a>
+            </div>
+            <div class="user">
+                <a href="#"></a>
+            </div>
+        </header>
+        <div class="banner">
+            <!-- 本例主要代码 Start ================================ -->
+            <div id="focus" class="focus">
+                <div class="hd">
+                    <ul></ul>
+                </div>
+                <div class="bd">
+                    <ul>
+                        <li><a href="#"><img src="images/banner1.jpg" /></a></li>
+                        <li><a href="#"><img src="images/banner2.jpg" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <script type="text/javascript">
+                TouchSlide({ 
+                    slideCell:"#focus",
+                    titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                    mainCell:".bd ul", 
+                    effect:"left", 
+                    autoPlay:true,//自动播放
+                    autoPage:true //自动分页
+                });
+            </script>
+            <!-- 本例主要代码 End ================================ -->
+        </div>
+        <div class="local">
+            <span>当前:</span>
+            <a href="#">查看历史定位</a>
+        </div>
+        <div class="service">
+            <div class="service-t">
+                <div class="row">
+                    <div class="col on">
+                        <h3><a href="#">狗狗生活服务</a></h3>
+                    </div>
+                    <div class="line"></div>
+                    <div class="col">
+                        <h3><a href="#">猫猫生活服务</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="service-c">
+                <div class="row">
+                    <div class="col"><a href="#">洗护</a></div>
+                    <div class="col"><a href="#">造型</a></div>
+                    <div class="col"><a href="#">绝育</a></div>
+                    <div class="col"><a href="#">寄养</a></div>
+                </div>
+                <div class="row">
+                    <div class="col"><a href="#">体检</a></div>
+                    <div class="col"><a href="#">医疗</a></div>
+                    <div class="col"><a href="#">更多</a></div>
+                    <div class="col"><a href="#"></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tuijian">
+            <span>附近推荐</span>
+            <a href="#">查看更多</a>
+        </div>
+
+        <div class="footer">
+            <a href="#"> 电脑版</a>
+            <a href="#"> 客户端</a>
+            <p>Copyright &copy; 2016沪ICP备13034501号-2</p>
+        </div>
+    </div>
+</body>
+</html>
